@@ -17,11 +17,17 @@ class _HomeScreenState extends State<HomeScreen> {
           title: Text("My Fist Project"),
         ),
         body: Center(
-          child: Container(
-            width: 480,
-            height: 360,
-            color: Colors.red[500],
-            child: Image.asset('assets/images/ainz.jpg'),
+          child: Row(
+            children: [
+              Container(color: Colors.green, child: Text("aaaaaaaaaaa")),
+              Text("bbbbbbbbbb"),
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.red[500],
+                child: Image.asset('assets/images/ainz.jpg'),
+              ),
+            ],
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
